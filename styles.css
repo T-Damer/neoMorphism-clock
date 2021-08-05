@@ -5,7 +5,7 @@
 /*===== Colorous =====*/
 /* USE THIS TO WORK WITH HSL — https://www.w3schools.com/colors/colors_hsl.asp */
 :root {
-  --hue-color: 25; /* Blue - 240, Green - 154, Orange - 25, */
+  --hue-color: 25; /* Blue - 240, Green - 154, Orange - 25, Pink - 335 */
 
   --first-color: hsl(var(--hue-color), 53%, 49%);
   --title-color: hsl(var(--hue-color), 53%, 15%);
@@ -155,7 +155,7 @@ a {
   height: 0.75rem;
   background-color: var(--first-color);
   border-radius: 50%;
-  border: 2px solic var(--body-color);
+  border: 2px solid var(--body-color); /* Remove this to make other look */
   z-index: var(--z-tooltip);
 }
 
@@ -291,3 +291,12 @@ body.dark-theme {
 
 /* MEDIA QUERIES */
 /* for large devices */
+@media screen and (min-width: 968px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .clock__logo {
+    margin-bottom: 3rem;
+  }
+}
