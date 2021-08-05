@@ -25,14 +25,41 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <!-- boxicons -->
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css" />
     <title>Neo Clock</title>
   </head>
 
   <body>
-    <h1>Neo Clock</h1>
-    <script src="js/main.js" />
+    <section class="clock container">
+      <div class="clock__container grid">
+        <div class="clock__content grid">
+          <div class="clock__circle">
+            <span class="clock__twelve"></span>
+            <span class="clock__three"></span>
+            <span class="clock__six"></span>
+            <span class="clock__nine"></span>
+
+            <div class="clock__rounder"></div>
+            <div class="clock__hours" id="clock-hours"></div>
+            <div class="clock__minutes" id="clock-minutes"></div>
+            <div class="clock__seconds" id="clock-seconds"></div>
+
+            <a
+              href="https://github.com/T-Damer/neoMorphism-clock"
+              targer="_blank"
+              class="clock__logo"
+              >Daniil Pankov aka T.DaMER</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
   </body>
 </html>
