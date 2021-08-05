@@ -196,5 +196,32 @@ a {
   z-index: var(--z-normal);
 }
 
+.clock__seconds {
+  width: 130px;
+  height: 130px;
+}
+
+.clock__seconds::before {
+  content: '';
+  position: absolute;
+  background-color: var(--first-color);
+  width: 0.125rem;
+  height: 5rem;
+  border-radius: 0.75rem;
+  z-index: var(--z-normal);
+}
+
+.clock__logo {
+  width: max-content;
+  justify-self: center;
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
+  color: var(--text-color-light);
+  transition: 0.3s;
+}
+
+.clock__logo:hover {
+  color: var(--first-color);
+}
 /* MEDIA QUERIES */
 /* for large devices */
