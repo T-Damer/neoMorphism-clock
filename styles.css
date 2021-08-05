@@ -19,7 +19,7 @@
 :root {
   --body-font: 'Lato', sans-serif;
   --big-font-size: 3rem;
-  --normal-font-size: 0.938rem;
+  --font-medium: 0.938rem;
   --small-font-size: 0.815rem;
   --smaller-font-size: 0.75rem;
   --tiny-font-size: 0.625rem;
@@ -28,7 +28,7 @@
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
-    --normal-font-size: 1.2rem;
+    --font-medium: 1.2rem;
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.815rem;
     --tiny-font-size: 0.75rem;
@@ -224,5 +224,31 @@ a {
 .clock__logo:hover {
   color: var(--first-color);
 }
+
+.clock__text {
+  display: flex;
+  justify-content: center;
+}
+
+.clock__text-hours,
+.clock__text-minutes {
+  font-size: var(--big-font-size);
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+}
+
+.clock__text-ampm {
+  font-size: var(--tiny-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  margin-left: var(--mb-0-25);
+}
+
+.clock__date {
+  text-align: center;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
 /* MEDIA QUERIES */
 /* for large devices */
