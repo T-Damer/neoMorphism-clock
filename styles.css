@@ -55,9 +55,7 @@
 }
 
 /*===== BASE =====*/
-*,
-::before,
-::after {
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -189,8 +187,8 @@ a {
 
 .clock__minutes::before {
   content: '';
-  position: absolute;
   background-color: var(--text-color);
+  position: absolute;
   height: 4rem;
   border-radius: 0.75rem;
   z-index: var(--z-normal);
