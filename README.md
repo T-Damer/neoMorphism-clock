@@ -1,4 +1,4 @@
-# Responsive e-commerce outfit web-site
+# Responsive neoMorphism clock
 
 <img src="https://user-images.githubusercontent.com/49658988/128317534-98550599-a873-4ed9-a177-81fef6a403eb.png" height="356" width="356"/>
 
