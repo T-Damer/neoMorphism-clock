@@ -33,8 +33,9 @@ const clockText = () => {
     mm = date.getMinutes(),
     ss = date.getSeconds(),
     ampm,
+    year = date.getFullYear(),
     month = date.getMonth(),
-    year = date.getFullYear()
+    day = date.getDay()
 
   // Establishing am-pm
   if (hh >= 12) {
@@ -67,5 +68,27 @@ const clockText = () => {
   if (mm < 10) {
     mm = `0${mm}`
   }
+
+  // Get months of the year and show one
+  let months = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ]
+
+  dateDay.innerHTML = day
+  dateMonth.innerHTML = `${months[month]},`
+  dateYear.innerHTML = year
 }
 setInterval(clockText, 1000) // 1000 = 1s
+
+//--- Dark-Light theme
