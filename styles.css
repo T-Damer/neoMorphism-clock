@@ -250,5 +250,44 @@ a {
   font-weight: var(--font-medium);
 }
 
+/* Dark/Light theme */
+/* Variables */
+body.dark-theme {
+  --title-color: hsl(var(--hue-color), 12%, 95%);
+  --text-color: hsl(var(--hue-color), 12%, 75%);
+  --body-color: hsl(var(--hue-color), 10%, 16%);
+}
+
+/* Box shadow dark */
+.dark-theme .clock__circle {
+  box-shadow: 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 1),
+    -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1),
+    inset -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1),
+    inset 6px 6px 12px hsla(var(--hue-color), 8%, 12%, 1);
+}
+
+.dark-theme .clock__theme {
+  box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 8%, 20%, 1),
+    inset 1px 1px 1px hsla(var(--hue-color), 8%, 12%, 1);
+}
+
+/* Button */
+.clock__theme {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  display: flex;
+  padding: 0.25rem;
+  border: 0.1rem solid;
+  border-color: var(--body-color);
+  border-radius: 50%;
+  box-shadow: -6px -6px 16px var(--white-color),
+    6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
+    inset 6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
+    inset -6px -6px 16px var(--white-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
 /* MEDIA QUERIES */
 /* for large devices */
