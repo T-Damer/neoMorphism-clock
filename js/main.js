@@ -1,13 +1,12 @@
-// CLOCK ROTATION AND DATE //
-
-const hours = document.getElementById('clock-hours'),
+// CLOCK ROTATION AND DATE 
+var hours = document.getElementById('clock-hours'),
 minutes = document.getElementById('clock-minutes'),
 seconds = document.getElementById('clock-seconds'),
 
-const clock = () => {
-    let date = new Date()
+var clock = () => {
+    var date = new Date()
 
-    let hh = date.getHours() * 30,
+    var hh = date.getHours() * 30,
     mm = date.getMinutes() * 6,
     ss = date.getSeconds() * 6
 
@@ -17,6 +16,6 @@ const clock = () => {
 }
 
 setInterval(clock, 1000) // 1000 = 1s
-// CLOCK TEXT //
+// CLOCK TEXT 
 
 
