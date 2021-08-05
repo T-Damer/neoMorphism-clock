@@ -61,13 +61,13 @@ const clockText = () => {
     hh = 12
   }
 
-  // Show mm
-  textMinutes.innerHTML = mm
-
-  // Show zero before hh
+  // Show zero before mm
   if (mm < 10) {
     mm = `0${mm}`
   }
+
+  // Show mm
+  textMinutes.innerHTML = mm
 
   // Get months of the year and show one
   let months = [
