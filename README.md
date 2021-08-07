@@ -1,6 +1,6 @@
 # Responsive neoMorphism clock
 
-<img src="https://t-damer.github.io/neoMorphism-clock/assets/logo356.png" height="356" width="356"/>
+<img src="https://t-damer.github.io/neoMorphism-clock/assets/logo356.png?raw=true" height="356" width="356"/>
 
 ---
 
