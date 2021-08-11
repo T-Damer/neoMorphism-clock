@@ -8,6 +8,8 @@
 
 ## Demo
 
+![ksmJJB5HxT](https://user-images.githubusercontent.com/49658988/129070755-4419b76c-1c8d-4ca8-b05a-2ed65d5ca864.gif)
+
 ## How to launch locally?
 
 Simply `git clone https://github.com/T-Damer/neoMorphism-clock.git`\
